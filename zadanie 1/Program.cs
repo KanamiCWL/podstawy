@@ -8,8 +8,16 @@ namespace zadanie_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("witaj świecie");
-            Console.ReadKey(true); //pauza
+            ///Napisać program wczytujący liczbę całkowitą i wypisujący na ekranie informację czy jest liczba parzysta, czy też nieparzysta.
+            int a;
+            Console.WriteLine("podaj liczbę całkowitą");
+            a = Convert.ToInt32(Console.ReadLine());
+            if (a % 2 == 0)
+
+                Console.WriteLine("liczba jest parzysta", a);
+            else
+                Console.WriteLine("liczba jest nieparzysta", a);
+            Console.ReadKey(true);
 
         }
     }
